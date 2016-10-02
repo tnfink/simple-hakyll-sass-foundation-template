@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--suppress HtmlUnknownTarget -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/htmls; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="hreflang" content=""/>
+  <title>Hakyll - SASS - Foundation - Template</title>
+  <link rel="stylesheet" type="text/css" href="./css/styling.css"/>
+</head>
+<body>
+<div id="main-div" class="column row">
+
+  <div class="row">
+    <div id="header" class="small-12 columns">
+
+      <div class="title-bar" id="top-header">
+        <div class="text-center">
+          Hakyll - SASS - Foundation - Template
+        </div>
+      </div>
+      <div class="title-bar" data-responsive-toggle="top-menu" data-hide-for="medium">
+        <button class="menu-icon dark" type="button" data-toggle></button>
+        <div class="title-bar-title">$title$</div>
+      </div>
+      <div class="top-bar" id="top-menu">
+        <div>
+          <div class="top-bar-left">
+            <ul class="menu vertical medium-horizontal">
+              <li><a $if(selected-page1)$
+                     class="selected-menu"
+                     $else$
+                     class="unselected-menu"
+                     $endif$
+                     href="/page1.html">Page 1</a></li>
+              <li><a $if(selected-page2)$
+                     class="selected-menu"
+                     $else$
+                     class="unselected-menu"
+                     $endif$
+                     href="/page2.html">Page 2</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="content" class="row">
+    <div class="small-12 columns" style="padding-left: 3em;padding-right: 3em;">
+      $body$
+    </div>
+  </div>
+
+  <div id="footer" class="row column">
+    <div class="media-object">
+      <div class="media-object-section">
+        <div class="thumbnail">
+          <img src= "./images/ninja_ghost.png">
+        </div>
+      </div>
+      <div class="media-object-section">
+        <p>
+          This free image was taken from <a href="http://yootheme.com/icons/freebies">YOO Theme</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/jquery/2.2.2/jquery.min.js" type="application/javascript"></script>
+<script src="https://cdn.jsdelivr.net/what-input/2.0.1/what-input.min.js" type="application/javascript"></script>
+<script src="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.js" type="application/javascript"></script>
+<script src="js/app.js" type="application/javascript"></script>
+</body>
+</html>
